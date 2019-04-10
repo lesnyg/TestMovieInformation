@@ -1,35 +1,41 @@
 package com.lesnyg.testmovieinformation;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MovieInfoFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_MVIMAGE = "movieImage";
     private static final String ARG_MVTITLE = "movieTitle";
+    private static final String ARG_POSITION = "position";
 
-    // TODO: Rename and change types of parameters
+    private int mCurrentPosition = -1;
+
     private int mMovieImage;
     private String mMovieTitle;
 
     private ImageView movieimage;
     private TextView movietitle;
 
+
+
     private OnDetailInfoButtonListener mListener;
 
     public MovieInfoFragment() {
-        // Required empty public constructor
     }
 
     /**
@@ -50,6 +56,8 @@ public class MovieInfoFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         if (getArguments() != null) {
             mMovieImage = getArguments().getInt(ARG_MVIMAGE);
             mMovieTitle = getArguments().getString(ARG_MVTITLE);
@@ -59,10 +67,15 @@ public class MovieInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_movie_info, container, false);
+        View view;
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+        view = inflater.inflate(R.layout.fragment_movie_info, container, false);
+        }else{
+            view = inflater.inflate(R.layout.fragment_movie_info2, container, false);
+        }
         return view;
     }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -81,6 +94,7 @@ public class MovieInfoFragment extends Fragment {
             }
         });
     }
+
 
     @Override
     public void onAttach(Context context) {
@@ -105,4 +119,5 @@ public class MovieInfoFragment extends Fragment {
     public void setOnDetailInfoButtonListener(OnDetailInfoButtonListener listener){
         mListener = listener;
     }
+
 }
