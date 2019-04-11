@@ -1,10 +1,12 @@
-package com.lesnyg.testmovieinformation;
+package com.lesnyg.testmovieinformation.test12;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.lesnyg.testmovieinformation.R;
 
 public class DetailInfoActivity extends AppCompatActivity {
     ImageView imageView;

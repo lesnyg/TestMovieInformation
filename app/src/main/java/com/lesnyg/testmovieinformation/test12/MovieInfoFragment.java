@@ -1,21 +1,18 @@
-package com.lesnyg.testmovieinformation;
+package com.lesnyg.testmovieinformation.test12;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.constraint.ConstraintSet;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.lesnyg.testmovieinformation.R;
 
 
 public class MovieInfoFragment extends Fragment {

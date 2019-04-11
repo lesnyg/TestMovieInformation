@@ -1,4 +1,4 @@
-package com.lesnyg.testmovieinformation;
+package com.lesnyg.testmovieinformation.test12;
 
 import java.io.Serializable;
 

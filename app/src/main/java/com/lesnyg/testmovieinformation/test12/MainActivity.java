@@ -1,17 +1,11 @@
-package com.lesnyg.testmovieinformation;
+package com.lesnyg.testmovieinformation.test12;
 
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.support.constraint.ConstraintLayout;
-import android.support.constraint.ConstraintSet;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
-import java.io.Serializable;
+import com.lesnyg.testmovieinformation.R;
 
 public class MainActivity extends AppCompatActivity implements MovieInfoFragment.OnDetailInfoButtonListener {
 

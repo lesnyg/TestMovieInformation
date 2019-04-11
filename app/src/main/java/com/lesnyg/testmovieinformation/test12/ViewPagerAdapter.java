@@ -1,8 +1,10 @@
-package com.lesnyg.testmovieinformation;
+package com.lesnyg.testmovieinformation.test12;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.lesnyg.testmovieinformation.R;
 
 import java.util.ArrayList;
 import java.util.List;
