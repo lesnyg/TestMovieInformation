@@ -9,7 +9,8 @@
         android:id="@+id/imageView_movie"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        tools:src="@mipmap/ic_launcher"/>
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/text_title"

@@ -21,8 +21,6 @@ public class MovieRecyclerAdapter extends RecyclerView.Adapter<MovieRecyclerAdap
 
     public MovieRecyclerAdapter(List<Movie> mList) {
         this.mList = mList;
-
-
     }
 
     @NonNull

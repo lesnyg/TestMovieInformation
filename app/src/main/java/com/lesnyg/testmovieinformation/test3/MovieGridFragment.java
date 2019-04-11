@@ -68,14 +68,15 @@ public class MovieGridFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mList.add(new Movie(R.drawable.avengers, "어벤져스"));
-        mList.add(new Movie(R.drawable.babydriver, "베이비 드라이버"));
+        mList.add(new Movie(R.drawable.raraland, "라라랜드"));
         mList.add(new Movie(R.drawable.himalayas, "히말라야"));
         mList.add(new Movie(R.drawable.monster, "괴물"));
-        mList.add(new Movie(R.drawable.raraland, "라라랜드"));
+        mList.add(new Movie(R.drawable.babydriver, "베이비 드라이버"));
 
         mRecycler = view.findViewById(R.id.recyclerview);
         mAdapter = new MovieRecyclerAdapter(mList);
         mRecycler.setAdapter(mAdapter);
+
 
     }
 }
